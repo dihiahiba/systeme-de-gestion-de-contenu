@@ -1,9 +1,3 @@
-GMaps.prototype.addStyle = function(options) {
-  var styledMapType = new google.maps.StyledMapType(options.styles, { name: options.styledMapName });
-
-  this.map.mapTypes.set(options.mapTypeId, styledMapType);
-};
-
-GMaps.prototype.setStyle = function(mapTypeId) {
-  this.map.setMapTypeId(mapTypeId);
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:e9a2bbae8e90049c4b12cd724c874c48b31ae606c047fe75274cd47719f01ea3
+size 301

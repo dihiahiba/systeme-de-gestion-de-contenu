@@ -1,29 +1,3 @@
-// Validation errors messages for Parsley
-// Load this after Parsley
-
-Parsley.addMessages('sv', {
-  defaultMessage: "Ogiltigt värde.",
-  type: {
-    email:        "Ange en giltig e-postadress.",
-    url:          "Ange en giltig URL.",
-    number:       "Ange ett giltigt nummer.",
-    integer:      "Ange ett heltal.",
-    digits:       "Ange endast siffror.",
-    alphanum:     "Ange endast bokstäver och siffror."
-  },
-  notblank:       "Värdet får inte vara tomt.",
-  required:       "Måste fyllas i.",
-  pattern:        "Värdet är ej giltigt.",
-  min:            "Värdet måste vara större än eller lika med %s.",
-  max:            "Värdet måste vara mindre än eller lika med %s.",
-  range:          "Värdet måste vara mellan %s och %s.",
-  minlength:      "Värdet måste vara minst %s tecken.",
-  maxlength:      "Värdet får maximalt innehålla %s tecken.",
-  length:         "Värdet måste vara mellan %s och %s tecken.",
-  mincheck:       "Minst %s val måste göras.",
-  maxcheck:       "Maximalt %s val får göras.",
-  check:          "Mellan %s och %s val måste göras.",
-  equalto:        "Värdena måste vara lika."
-});
-
-Parsley.setLocale('sv');
+version https://git-lfs.github.com/spec/v1
+oid sha256:92d7670acfe9b1b7b44549562eb4571e013cc41b594239ba40edaffec637b596
+size 1181

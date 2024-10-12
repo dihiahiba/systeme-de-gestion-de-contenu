@@ -1,14 +1,3 @@
-// Validation errors messages for Parsley
-// Load this after Parsley
-
-Parsley.addMessages('lt', {
-  dateiso:  "Šis įrašas turi būti teisingo formato data (YYYY-MM-DD).",
-  minwords: "Šis įrašas turi turėti ne mažiau kaip %s žodžių.",
-  maxwords: "Šis įrašas turi turėti ne daugiau kaip %s žodžių.",
-  words:    "Šis įrašas turi turėti nuo %s iki %s žodžių.",
-  gt:       "Ši vertė turi būti didesnė.",
-  gte:      "Ši vertė turi būti didesnė arba lygi.",
-  lt:       "Ši vertė turi būti mažesnė.",
-  lte:      "Ši vertė turi būti mažesnė arba lygi.",
-  notequalto: "Ši vertė turi būti skirtinga."
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:e4856fcf3e5f5e55c3cfaef6b7e3bab258252c02a8f6a7dfc4304f2ad95779a1
+size 648

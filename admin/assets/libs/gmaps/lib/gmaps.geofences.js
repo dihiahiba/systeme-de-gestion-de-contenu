@@ -1,14 +1,3 @@
-GMaps.prototype.checkGeofence = function(lat, lng, fence) {
-  return fence.containsLatLng(new google.maps.LatLng(lat, lng));
-};
-
-GMaps.prototype.checkMarkerGeofence = function(marker, outside_callback) {
-  if (marker.fences) {
-    for (var i = 0, fence; fence = marker.fences[i]; i++) {
-      var pos = marker.getPosition();
-      if (!this.checkGeofence(pos.lat(), pos.lng(), fence)) {
-        outside_callback(marker, fence);
-      }
-    }
-  }
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:5b1d27e08db4998e1611a5af686f058e09ddff7816a29b51857ce2ff64e330dd
+size 449

@@ -1,9 +1,3 @@
-// Validation errors messages for Parsley
-// Load this after Parsley
-
-Parsley.addMessages('uk', {
-  dateiso:  "Це значення має бути коректною датою (РРРР-ММ-ДД).",
-  minwords: "Це значення повинно містити не менше %s слів.",
-  maxwords: "Це значення повинно містити не більше %s слів.",
-  words:    "Це значення повинно містити від %s до %s слів."
-});
+version https://git-lfs.github.com/spec/v1
+oid sha256:508178b3d3b786d069eabc63448a6e685ed5932955c846c17346136e5fa824b0
+size 495

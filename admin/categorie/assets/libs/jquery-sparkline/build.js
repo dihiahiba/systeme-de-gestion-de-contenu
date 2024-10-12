@@ -1,13 +1,3 @@
-var shell = require('shelljs');
-
-var package = require('./package');
-
-var files = ['header.js', 'defaults.js', 'utils.js', 'simpledraw.js', 'rangemap.js', 'interact.js', 'base.js', 'chart-line.js', 'chart-bar.js', 'chart-tristate.js', 'chart-discrete.js', 'chart-bullet.js', 'chart-pie.js', 'chart-box.js', 'vcanvas-base.js', 'vcanvas-canvas.js', 'vcanvas-vml.js', 'footer.js'];
-
-shell.cd('src');
-
-var src = shell.cat(files).replace(/@VERSION@/mg, package.version);
-
-shell.cd('..');
-
-src.to('jquery.sparkline.js');
+version https://git-lfs.github.com/spec/v1
+oid sha256:9634973a67be5965c7c226a6a4e4221350049bbce9353068071d45b925cf27a8
+size 515

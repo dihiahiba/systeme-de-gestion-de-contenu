@@ -1,1 +1,3 @@
-$(document).ready(function(){$("#datatable").DataTable(),$("#datatable-buttons").DataTable({lengthChange:!1,buttons:["copy","excel","pdf","colvis"]}).buttons().container().appendTo("#datatable-buttons_wrapper .col-md-6:eq(0)"),$("#datatable_length select").addClass("form-select form-select-sm")});
+version https://git-lfs.github.com/spec/v1
+oid sha256:bd752c3fe74a7a8089c0fcdf14d4d240a7d8d01212ee56f03613e3b9ef9976c6
+size 298

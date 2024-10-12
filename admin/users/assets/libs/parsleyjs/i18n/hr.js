@@ -1,29 +1,3 @@
-// Validation errors messages for Parsley
-// Load this after Parsley
-
-Parsley.addMessages('hr', {
-  defaultMessage: "Neispravan unos.",
-  type: {
-    email: "Ovo polje treba sadržavati ispravnu email adresu.",
-    url: "Ovo polje treba sadržavati ispravni url.",
-    number: "Ovo polje treba sadržavati ispravno upisan broj.",
-    integer: "Ovo polje treba sadržavati ispravno upisan cijeli broj.",
-    digits: "Ovo polje treba sadržavati znamenke.",
-    alphanum: "Ovo polje treba sadržavati brojke ili slova."
-  },
-  notblank: "Ovo polje ne smije biti prazno.",
-  required: "Ovo polje je obavezno.",
-  pattern: "Neispravan unos.",
-  min: "Vrijednost treba biti jednaka ili veća od %s.",
-  max: "Vrijednost treba biti jednaka ili manja od %s.",
-  range: "Vrijednost treba biti između %s i %s.",
-  minlength: "Unos je prekratak. Treba sadržavati %s ili više znakova.",
-  maxlength: "Unos je predugačak. Treba sadržavati %s ili manje znakova.",
-  length: "Neispravna duljina unosa. Treba sadržavati između %s i %s znakova.",
-  mincheck: "Treba odabrati najmanje %s izbora.",
-  maxcheck: "Treba odabrati %s ili manje izbora.",
-  check: "Treba odabrati između %s i %s izbora.",
-  equalto: "Ova vrijednost treba biti ista."
-});
-
-Parsley.setLocale('hr');
+version https://git-lfs.github.com/spec/v1
+oid sha256:47ab140e28bf5d79db333a2996db0a78ae77632efd7c44d64b1490c3450ae7fc
+size 1265

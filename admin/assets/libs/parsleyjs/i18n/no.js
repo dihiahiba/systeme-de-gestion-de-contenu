@@ -1,29 +1,3 @@
-// Validation errors messages for Parsley
-// Load this after Parsley
-
-Parsley.addMessages('no', {
-  defaultMessage: "Verdien er ugyldig.",
-  type: {
-    email:        "Verdien må være en gyldig e-postadresse.",
-    url:          "Verdien må være en gyldig url.",
-    number:       "Verdien må være et gyldig tall.",
-    integer:      "Verdien må være et gyldig heltall.",
-    digits:       "Verdien må være et siffer.",
-    alphanum:     "Verdien må være alfanumerisk"
-  },
-  notblank:       "Verdien kan ikke være blank.",
-  required:       "Verdien er obligatorisk.",
-  pattern:        "Verdien er ugyldig.",
-  min:            "Verdien må være større eller lik %s.",
-  max:            "Verdien må være mindre eller lik %s.",
-  range:          "Verdien må være mellom %s and %s.",
-  minlength:      "Verdien er for kort. Den må bestå av minst %s tegn.",
-  maxlength:      "Verdien er for lang. Den kan bestå av maksimalt %s tegn.",
-  length:         "Verdien har ugyldig lengde. Den må være mellom %s og %s tegn lang.",
-  mincheck:       "Du må velge minst %s alternativer.",
-  maxcheck:       "Du må velge %s eller færre alternativer.",
-  check:          "Du må velge mellom %s og %s alternativer.",
-  equalto:        "Verdien må være lik."
-});
-
-Parsley.setLocale('no');
+version https://git-lfs.github.com/spec/v1
+oid sha256:5f3752e4dd02dba69b0c422dedbd403b292e9966847a9f6ebe2b8be74ad911bd
+size 1304

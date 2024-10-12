@@ -1,7 +1,3 @@
-// Exports the "textcolor" plugin for usage with module loaders
-// Usage:
-//   CommonJS:
-//     require('tinymce/plugins/textcolor')
-//   ES2015:
-//     import 'tinymce/plugins/textcolor'
-require('./plugin.js');
+version https://git-lfs.github.com/spec/v1
+oid sha256:4c54b2959afce4d61251463bbbd0d2e32dadc074d3634192bce2bc937ee59633
+size 211

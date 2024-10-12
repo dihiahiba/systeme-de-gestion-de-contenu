@@ -1,1 +1,3 @@
-!function(){"use strict";window.addEventListener("load",function(){var t=document.getElementsByClassName("needs-validation");Array.prototype.filter.call(t,function(e){e.addEventListener("submit",function(t){!1===e.checkValidity()&&(t.preventDefault(),t.stopPropagation()),e.classList.add("was-validated")},!1)})},!1)}(),$(document).ready(function(){$(".custom-validation").parsley()});
+version https://git-lfs.github.com/spec/v1
+oid sha256:d4e159027562a598c5dae0b6335d506bccc36793cc5b8e79471b887a617c7b2d
+size 385
