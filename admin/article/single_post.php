@@ -15,19 +15,19 @@ if (isset($_GET["id"])) {
         $row = mysqli_fetch_array($join);
         $page = "article-" . $row['name'] . "-" . $row['title'];}
 }
-$q = mysqli_query($db, "SELECT `articles`.`id` AS `id`, `title`, `content`, `date`, `image`, `name`,username
+$q = mysqli_query($db, "SELECT `articles`.`id` AS `id`, `title`, `content`, `date`, `image`, `name`,username,isValidate
                             FROM `articles` INNER JOIN `categories` 
                             ON `categories`.`id` = `articles`.`category` INNER JOIN users on users.id=articles.id_user
-                            ORDER BY `date` ASC");
+                            Where isValidate=1 ORDER BY `date` ASC");
 
 
 
 
 
-$s = mysqli_query($db, "SELECT `articles`.`id` AS `id`, `title`, `content`, `date`, `image`, `name`,username
+$s = mysqli_query($db, "SELECT `articles`.`id` AS `id`, `title`, `content`, `date`, `image`, `name`,username,isValidate
                             FROM `articles` INNER JOIN `categories` 
                             ON `categories`.`id` = `articles`.`category` INNER JOIN users on users.id=articles.id_user
-                            ORDER BY `date` ASC LIMIT 3");
+                            Where isValidate=1 ORDER BY `date` ASC LIMIT 3");
 
 
 
@@ -150,7 +150,7 @@ $c = mysqli_query($db, "SELECT * FROM commentaire  where id = $cnt->id ");
 
             <!-- Logo -->
             <a href="index.html" class="logo">
-            <img class="logo__img" src="img/logo_dev.png" style="height:20px; "  alt="logo">
+            <img class="logo__img" src="img/logo_dev.png" style="height:40px; "  alt="logo">
             </a>
 
              <!-- Nav-wrap -->
@@ -193,7 +193,7 @@ $c = mysqli_query($db, "SELECT * FROM commentaire  where id = $cnt->id ");
             </div>
 
             <div class="nav__right-item">
-              <a href="" class="nav__subscribe" data-toggle="modal" data-target="#subscribe-modal">Login</a>
+              <a href="" class="nav__subscribe" data-toggle="modal" data-target="#subscribe-modal"></a>
             </div>
 
             <!-- Search -->
@@ -510,8 +510,7 @@ $c = mysqli_query($db, "SELECT * FROM commentaire  where id = $cnt->id ");
       <div class="footer__bottom">
         <div class="container text-center">
           <span class="copyright">
-            &copy; <script>document.querySelector(".copyright").innerHTML += new Date().getFullYear();</script> Devnano  |  Made by <a href="https://deothemes.com">Naoual</a>
-          </span>
+            &copy; <script>document.querySelector(".copyright").innerHTML += new Date().getFullYear();</script> MyPress
         </div>
       </div> <!-- end bottom footer -->
     </footer> <!-- end footer -->

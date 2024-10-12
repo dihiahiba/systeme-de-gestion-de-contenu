@@ -18,7 +18,7 @@ if (isset($_GET["id"])) {
 $q = mysqli_query($db, "SELECT `articles`.`id` AS `id`, `title`, `content`, `date`, `image`, `name`,username
                             FROM `articles` INNER JOIN `categories` 
                             ON `categories`.`id` = `articles`.`category` INNER JOIN users on users.id=articles.id_user
-                            ORDER BY `date` ASC WHERE ");
+                            ORDER BY `date` ASC  ");
 
 
 
@@ -49,7 +49,7 @@ $c = mysqli_query($db, "SELECT * FROM commentaire  where id = $cnt->id ");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Devnano | Single Post</title>
+  <title>MyPress | Single Post</title>
 
   <meta charset="utf-8">
   <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
@@ -150,7 +150,7 @@ $c = mysqli_query($db, "SELECT * FROM commentaire  where id = $cnt->id ");
 
             <!-- Logo -->
             <a href="index.html" class="logo">
-            <img class="logo__img" src="img/logo_dev.png" style="height:20px; "  alt="logo">
+            <img class="logo__img" src="../img/logo_dev.png" style="height:40px; "  alt="logo">
             </a>
 
              <!-- Nav-wrap -->
@@ -370,7 +370,7 @@ $c = mysqli_query($db, "SELECT * FROM commentaire  where id = $cnt->id ");
 
               <!-- Widget socials -->
               <div class="widget widget-socials">
-                <h4 class="widget-title">Keep up with Devnano</h4>
+                <h4 class="widget-title">Keep up with MyPress</h4>
                 <ul class="socials">
                   <li>
                     <a class="social-facebook" href="#" title="facebook" target="_blank">
@@ -455,7 +455,7 @@ $c = mysqli_query($db, "SELECT * FROM commentaire  where id = $cnt->id ");
       <div class="footer__bottom">
         <div class="container text-center">
           <span class="copyright">
-            &copy; <script>document.querySelector(".copyright").innerHTML += new Date().getFullYear();</script> Devnano  |  Made by <a href="https://deothemes.com">Naoual</a>
+            &copy; <script>document.querySelector(".copyright").innerHTML += new Date().getFullYear();</script> MyPress 
           </span>
         </div>
       </div> <!-- end bottom footer -->

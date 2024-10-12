@@ -37,7 +37,7 @@ $c = $c->getAll();?>
                                 <img src="assets/images/logo-sm-dark.png" alt="" height="22">
                             </span>
                             <span class="logo-lg">
-                                <img src="assets/images/logo-dark.png" alt="" height="24">
+                                <img src="assets/images/logo-dark.png" alt="" height="44">
                             </span>
                         </a>
 
@@ -59,11 +59,12 @@ $c = $c->getAll();?>
 
 
                     <div class="dropdown d-none d-lg-inline-block align-self-center">
-                        <button class="btn btn-header waves-effect  dropdown-toggle" type="button"
-                            id="createNewDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                            Create New
+                       <a href="index.php">
+                        <button class="btn btn-header waves-effect  " type="button"
+                            >
+                           Blog
                         </button>
-
+                        </a>
                     </div>
                 </div>
 
@@ -113,7 +114,7 @@ $c = $c->getAll();?>
 
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
-                            <a class="dropdown-item text-primary" href="#"><i
+                            <a class="dropdown-item text-primary" href="../logout.php"><i
                                     class="mdi mdi-power font-size-16 align-middle me-2 text-primary"></i>
                                 <span>Logout</span></a>
                         </div>
@@ -151,7 +152,7 @@ $c = $c->getAll();?>
                                 <div class="page-title">
                                     <h4 class="mb-0 font-size-18">Dashboard</h4>
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item active">Welcome to Devnano</li>
+                                        <li class="breadcrumb-item active">Welcome to MyPress</li>
                                     </ol>
                                 </div>
 
@@ -295,25 +296,28 @@ $c = $c->getAll();?>
                                                         <th scope="col">Name</th>
                                                         <th scope="col">Date</th>
                                                         <th scope="col">Commentaire</th>
+                                                        <th scope="col">Action</th>
+
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <?php
                                                         foreach($c as $a)  {
-                                                           echo  $a->commentaire;
 
                                                         echo"   
                                                         <tr>
                                                             <th scope='row'>" . $a->id_comment ."</th>
                                                             <td>
                                                                 <div>
-                                                                    <img src='img/blog/comment_1.png'
-                                                                        class='avatar-md rounded-circle me-2'> " . $a->name ."
+                                                                <i class='fas fa-user avatar-md rounded-circle '></i>
+                                                                     " . $a->name ."
                                                                 </div>
                                                             </td>
-                                                            <td>" . $a->date ." hhhh</td>
+                                                            <td>" . $a->date ." </td>
                                                             <td>" . $a->commentaire ."</td>
-                                                          
+                                                            <td><a href='delete_comment.php/?id=" . $a->id_comment . "' class='btn edit' style='color:#f16c69;'><i class='fa-solid fa-trash'></i></a>
+                                                            </td>
+
                                                             </tr> ";
                                                         }
                                                         
@@ -350,10 +354,7 @@ $c = $c->getAll();?>
                         <div class="col-sm-12 text-center">
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> © Devnano <span class="d-none d-sm-inline-block"><i
-                                    class="mdi mdi-heart text-primary"></i>
-                                by
-                                Naoual.</span>
+                            </script> © MyPress <span class="d-none d-sm-inline-block">
                         </div>
 
                     </div>

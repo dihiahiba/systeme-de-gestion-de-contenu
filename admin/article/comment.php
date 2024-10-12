@@ -18,11 +18,10 @@ class comments{
     public function getAll()
     {
         $_db = new database(); 
-        $_db->query("SELECT `commentaire`.`id_comment`, `commentaire`,`name`,`email`,commentaire.date,title
-        FROM `commentaire` INNER JOIN `articles` 
-        ON `commentaire`.`id_comment` = `articles`.`id` ");
+        $_db->query("SELECT *FROM `commentaire`");
         return $_db->result();
     }
+    
     
     public function getid()
     {
@@ -49,6 +48,13 @@ class comments{
         $_db = new database();
         $_db->query("insert into commentaire (commentaire,name,email,id,date)
                     values ('"  . $this->_commentaire . "','"  . $this->_name . "','"  . $this->_email . "',"  . $this->_id . ",NOW())" );
+        $_db->execute();
+        return 0;
+    }
+    public function delete()
+    {
+        $_db= new database();
+        $_db->query("delete from commentaire where id_comment=" . $this->_id . "");
         $_db->execute();
         return 0;
     }

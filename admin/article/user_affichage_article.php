@@ -30,7 +30,7 @@ $c = $e->getMyArticle();
                                 <img src="../assets/images/LOGO2.png" alt="" height="22">
                             </span>
                             <span class="logo-lg">
-                                <img src="../assets/images/Capture1.PNG" alt="" height="44">
+                                <img src="../assets/images/logo-dark.png" alt="" height="44">
                             </span>
                         </a>
 
@@ -106,18 +106,10 @@ $c = $e->getMyArticle();
                         </button>
 
                         <div class="dropdown-menu dropdown-menu-end">
-                            <!-- item-->
-                            <a class="dropdown-item" href="#"><i
-                                    class="mdi mdi-account-circle font-size-16 align-middle me-2 text-muted"></i>
-                                <span>Profile</span></a>
+                           
 
-                            <a class="dropdown-item d-block" href="#"><span
-                                    class="badge bg-success float-end">11</span><i
-                                    class="mdi mdi-wrench font-size-16 align-middle text-muted me-2"></i>
-                                <span>Settings</span></a>
-
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-primary" href="#"><i
+                            
+                            <a class="dropdown-item text-primary" href="../logout.php"><i
                                     class="mdi mdi-power font-size-16 align-middle me-2 text-primary"></i>
                                 <span>Logout</span></a>
                         </div>
@@ -326,8 +318,7 @@ $c = $e->getMyArticle();
                 <div class="col-sm-12 text-center">
                     <script>
                         document.write(new Date().getFullYear())
-                    </script> ©  <span class="d-none d-sm-inline-block"><i class="mdi mdi-heart text-danger"></i>
-                       </span>
+                    </script> © MyPress <span class="d-none d-sm-inline-block">
                 </div>
 
             </div>

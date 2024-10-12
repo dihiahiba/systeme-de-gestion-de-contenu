@@ -29,7 +29,7 @@ include "import/head.php"
                                 <img src="../assets/images/LOGO2.png" alt="" height="22">
                             </span>
                             <span class="logo-lg">
-                                <img src="../assets/images/Capture1.PNG" alt="" height="44">
+                                <img src="../assets/images/logo-dark.png" alt="" height="44">
                             </span>
                         </a>
 
@@ -106,17 +106,10 @@ include "import/head.php"
 
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
-                            <a class="dropdown-item" href="#"><i
-                                    class="mdi mdi-account-circle font-size-16 align-middle me-2 text-muted"></i>
-                                <span>Profile</span></a>
-
-                            <a class="dropdown-item d-block" href="#"><span
-                                    class="badge bg-success float-end">11</span><i
-                                    class="mdi mdi-wrench font-size-16 align-middle text-muted me-2"></i>
-                                <span>Settings</span></a>
+                            
 
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-primary" href="#"><i
+                            <a class="dropdown-item text-primary" href="../logout.php"><i
                                     class="mdi mdi-power font-size-16 align-middle me-2 text-primary"></i>
                                 <span>Logout</span></a>
                         </div>
@@ -195,7 +188,7 @@ include "import/head.php"
                                 <div class="page-title">
                                     <h4 class="mb-0 font-size-18">Article</h4>
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Devnano</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">MyPress</a></li>
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Articles</a></li>
                                         <li class="breadcrumb-item active">Liste des Articles</li>
                                     </ol>
@@ -302,9 +295,7 @@ include "import/head.php"
                 <div class="col-sm-12 text-center">
                     <script>
                         document.write(new Date().getFullYear())
-                    </script> © Devnano <span class="d-none d-sm-inline-block"><i class="mdi mdi-heart text-danger"></i>
-                        by
-                        Naoual.</span>
+                    </script> © MyPress <span class="d-none d-sm-inline-block">
                 </div>
 
             </div>

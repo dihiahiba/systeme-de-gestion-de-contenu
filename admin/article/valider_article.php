@@ -5,6 +5,6 @@
         $cnt = new articles(); 
         $cnt->setid($article_id);
         $cnt->valider(); 
-        header("Location: ../pending_article.php?action=success");
+        header("Location: pending_article.php?action=success");
    
 ?>

@@ -6,7 +6,7 @@
     <head>
 
         <meta charset="utf-8" />
-        <title>Login | Devnano</title>
+        <title>Login | MyPress</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesbrand" name="author" />
@@ -36,7 +36,7 @@
                     <div class="auth-logo">
                         <h3 class="text-center">
                             <a href="index.html" class="logo d-block my-4">
-                                <img src="assets/images/Capture1.PNG" class="logo-dark mx-auto" height="30" alt="logo-dark">
+                                <img src="assets/images/logo-dark.png" class="logo-dark mx-auto" height="50" alt="logo-dark">
                                 <img src="assets/images/logo-light.png" class="logo-light mx-auto" height="30" alt="logo-light">
                             </a>
                         </h3>
@@ -44,7 +44,7 @@
 
                     <div class="p-3">
                         <h4 class="text-muted font-size-18 text-center">Welcome Back !</h4>
-                        <p class="text-muted text-center">Sign in to continue to Devnano.</p>
+                        <p class="text-muted text-center">Sign in to continue to MyPress.</p>
 
                         <form class="form-horizontal" method="post" name="login">
                         <?php
@@ -128,9 +128,7 @@
                
                 <p class="text-muted">
                     ©
-                    <script>document.write(new Date().getFullYear())</script> Devnano<i
-                        class="mdi mdi-heart text-primary"></i> By
-                    Naoual
+                    <script>document.write(new Date().getFullYear())</script> MyPress 
                 </p>
 
                

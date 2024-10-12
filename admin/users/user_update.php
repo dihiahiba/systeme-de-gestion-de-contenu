@@ -32,7 +32,7 @@ $cnt= $cnt->getOne();
 <head>
 
     <meta charset="utf-8" />
-    <title>Devnano</title>
+    <title>MyPress</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -69,7 +69,7 @@ $cnt= $cnt->getOne();
                                 <img src="../assets/images/LOGO2.png" alt="" height="22">
                             </span>
                             <span class="logo-lg">
-                                <img src="../../assets/images/Capture1.PNG" alt="" height="44">
+                                <img src="../../assets/images/logo-dark.png" alt="" height="44">
                             </span>
                         </a>
 
@@ -229,7 +229,7 @@ $cnt= $cnt->getOne();
                                 <div class="page-title">
                                     <h4 class="mb-0 font-size-18">Modifier un utilisateur</h4>
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Devnano</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">MyPress</a></li>
                                         <li class="breadcrumb-item"><a href="javascript: void(0);"></a>Admin</li>
                                         <li class="breadcrumb-item active">Modifier un utilisateur</li>
                                     </ol>
@@ -361,10 +361,7 @@ $cnt= $cnt->getOne();
                         <div class="col-sm-12 text-center">
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> © Devnano <span class="d-none d-sm-inline-block"><i
-                                    class="mdi mdi-heart text-primary"></i>
-                                by
-                                Naoual.</span>
+                            </script> © MyPress <span class="d-none d-sm-inline-block">
                         </div>
 
                     </div>

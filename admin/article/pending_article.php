@@ -31,7 +31,7 @@ include "import/head.php"
                                 <img src="../assets/images/LOGO2.png" alt="" height="22">
                             </span>
                             <span class="logo-lg">
-                                <img src="../assets/images/Capture1.PNG" alt="" height="44">
+                                <img src="../assets/images/logo-dark.png" alt="" height="44">
                             </span>
                         </a>
 
@@ -264,7 +264,10 @@ include "import/head.php"
                                                             <a  href=" . "preview_post.php/?id=" . $a->id . "  class='btn edit' style='color:black; ' title='Preview'><i class='fas fa-eye
                                                             '></i></a>
 
-                                                            <a href=" . "valider_article.php/?id=" . $a->id . "  class='btn edit' style='color:green;'  title='Cliquez pour valider'><i class='fas fa-check'></i></a>
+                                                            <a href='#' class='btn edit' style='color:green;'data-toggle='modal' data-target='#confirmationModal' title='Cliquez pour valider' onclick='setArticleToPublish(" . $a->id . ")'>
+                                                            <i class='fas fa-check'></i> 
+                                                        </a>
+                                                        
                                                             <a href='#' class='btn edit' data-toggle='modal' data-target='#staticBackdrop2' style='color:#007bff;'title='Ajouter des remarques' onclick='setArticleId(" . $a->id . ")'>
                                                             <i class='fas fa-comment-alt'></i> </a>
                                                         
@@ -290,6 +293,32 @@ include "import/head.php"
     <!-- Main End -->
     </div>
     <!-- Main Section End -->
+    <!-- Model publier article -->
+    <!-- Confirmation Modal -->
+   <!-- Confirmation Modal -->
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmationModalLabel">Confirmer la publication</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Êtes-vous sûr de vouloir publier cet article ?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                    <button type="button" class="btn btn-primary" id="confirmPublishBtn">Oui, Publier</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Model remarque -->
     <div class="modal fade" id="staticBackdrop2" data-backdrop="static" data-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -332,9 +361,7 @@ include "import/head.php"
                 <div class="col-sm-12 text-center">
                     <script>
                         document.write(new Date().getFullYear())
-                    </script> © Devnano <span class="d-none d-sm-inline-block"><i class="mdi mdi-heart text-danger"></i>
-                        by
-                        Naoual.</span>
+                    </script> © MyPress 
                 </div>
 
             </div>
@@ -420,6 +447,23 @@ include "import/head.php"
         
     }
    </script>
+
+<script>
+    var articleIdToPublish;
+
+function setArticleToPublish(id) {
+    articleIdToPublish = id;
+}
+
+$(document).ready(function() {
+    $('#confirmPublishBtn').on('click', function() {
+            
+            window.location.href = 'valider_article.php?id=' + articleIdToPublish;
+       
+    });
+});
+
+</script>
 
 
 </body>

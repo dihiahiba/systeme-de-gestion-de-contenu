@@ -11,7 +11,6 @@ if(isset($_SESSION['user_id'])) {
     header("Location: ../index.php");
     exit; 
 }
-
 require_once('../categorie/categorie.php');
 
 $c = new categories;
@@ -27,7 +26,7 @@ $u= $u->getuser();
 <head>
 
     <meta charset="utf-8" />
-    <title>Devnano | Admin Dashboard</title>
+    <title>MyPress | Admin Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -62,7 +61,7 @@ $u= $u->getuser();
                                 <img src="../assets/images/LOGO2.png" alt="" height="22">
                             </span>
                             <span class="logo-lg">
-                                <img src="../assets/images/Capture1.PNG" alt="" height="44">
+                                <img src="../assets/images/logo-dark.png" alt="" height="44">
                             </span>
                         </a>
 
@@ -132,17 +131,9 @@ $u= $u->getuser();
 
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
-                            <a class="dropdown-item" href="#"><i
-                                    class="mdi mdi-account-circle font-size-16 align-middle me-2 text-muted"></i>
-                                <span>Profile</span></a>
-
-                            <a class="dropdown-item d-block" href="#"><span
-                                    class="badge bg-success float-end">11</span><i
-                                    class="mdi mdi-wrench font-size-16 align-middle text-muted me-2"></i>
-                                <span>Settings</span></a>
 
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-primary" href="#"><i
+                            <a class="dropdown-item text-primary" href="../logout.php"><i
                                     class="mdi mdi-power font-size-16 align-middle me-2 text-primary"></i>
                                 <span>Logout</span></a>
                         </div>
@@ -209,7 +200,7 @@ $u= $u->getuser();
                                 <div class="page-title">
                                     <h4 class="mb-0 font-size-18">Ajouter un article</h4>
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Devnano</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">MyPress</a></li>
                                         <li class="breadcrumb-item"><a href="javascript: void(0);"></a>Admin</li>
                                         <li class="breadcrumb-item active">Ajouter un article</li>
                                     </ol>
@@ -326,9 +317,9 @@ $u= $u->getuser();
                                                     placeholder="Entrez le titre de votre article... " required
                                                     name="date">
                                                 <?php
-                                                   
+                                                include('../users/user-copy.php');
                                                  $user_id = $_SESSION['user_id'];
-                                                 $user1q = new users();
+                                                 $user1q = new user();
                                                  $user1q->setId($user_id);
                                                  $userInfo = $user1q->getOne();
                                                  if($userInfo->isAdmin == 'Yes') {
@@ -379,9 +370,7 @@ $u= $u->getuser();
                         <div class="col-sm-12 text-center">
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> ©  <span class="d-none d-sm-inline-block"><i
-                                    class="mdi mdi-heart text-primary"></i>
-                                by
+                            </script> © MyPress <span class="d-none d-sm-inline-block">
                                 </span>
                         </div>
 

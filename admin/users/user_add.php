@@ -38,7 +38,7 @@ if(isset($_POST['ajout']))
                                 <img src="assets/images/logo-sm-dark.png" alt="" height="22">
                             </span>
                             <span class="logo-lg">
-                                <img src="assets/images/logo-dark.png" alt="" height="24">
+                                <img src="assets/images/logo-dark.png" alt="" height="44">
                             </span>
                         </a>
 
@@ -59,13 +59,7 @@ if(isset($_POST['ajout']))
                     </button>
 
 
-                    <div class="dropdown d-none d-lg-inline-block align-self-center">
-                        <button class="btn btn-header waves-effect  dropdown-toggle" type="button"
-                            id="createNewDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                            Create New
-                        </button>
-
-                    </div>
+                    
                 </div>
 
                 <div class="d-flex">
@@ -114,7 +108,7 @@ if(isset($_POST['ajout']))
 
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
-                            <a class="dropdown-item text-primary" href="#"><i
+                            <a class="dropdown-item text-primary" href="../logout.php"><i
                                     class="mdi mdi-power font-size-16 align-middle me-2 text-primary"></i>
                                 <span>Logout</span></a>
                         </div>
@@ -152,7 +146,7 @@ if(isset($_POST['ajout']))
                                 <div class="page-title">
                                     <h4 class="mb-0 font-size-18">Ajouter un utilisateur</h4>
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Devnano</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">MyPress</a></li>
                                         <li class="breadcrumb-item"><a href="javascript: void(0);"></a>Admin</li>
                                         <li class="breadcrumb-item active">Ajouter un utilisateur</li>
                                     </ol>
@@ -234,7 +228,7 @@ if(isset($_POST['ajout']))
                                                     <div class="mb-3 position-relative">
                                                         <label class="form-label" for="validationTooltip03">Mot de
                                                             passe</label>
-                                                        <input type="text" class="form-control" id="validationTooltip03"
+                                                        <input type="password" class="form-control" id="validationTooltip03"
                                                             placeholder="Mot de passe" required name="password">
 
                                                     </div>
@@ -289,9 +283,7 @@ if(isset($_POST['ajout']))
                         <div class="col-sm-12 text-center">
                             <script>
                                 document.write(new Date().getFullYear())
-                            </script> © Agroxa <span class="d-none d-sm-inline-block">- Crafted with <i
-                                    class="mdi mdi-heart text-primary"></i> by
-                                Themesbrand.</span>
+                            </script> © MyPress <span class="d-none d-sm-inline-block">
                         </div>
 
                     </div>

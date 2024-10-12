@@ -43,7 +43,7 @@ $categorie = mysqli_query($db, "SELECT * FROM `categories` ");
 <html lang="en">
 
 <head>
-  <title>Devnano | Home</title>
+  <title>MyPress | Home</title>
 
   <meta charset="utf-8">
   <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
@@ -148,7 +148,7 @@ $categorie = mysqli_query($db, "SELECT * FROM `categories` ");
 
           <!-- Logo -->
           <a href="index.html" class="logo">
-            <img class="logo__img" src="img/logo_dev.png" style="height:20px; " alt="logo">
+            <img class="logo__img" src="img/logo_dev.png" style="height:40px; " alt="logo">
           </a>
 
           <!-- Nav-wrap -->
@@ -193,7 +193,6 @@ $categorie = mysqli_query($db, "SELECT * FROM `categories` ");
             </div>
 
             <div class="nav__right-item">
-              <a href="../../login.php" class="nav__subscribe">Login</a>
             </div>
 
             <!-- Search -->
@@ -234,7 +233,7 @@ $categorie = mysqli_query($db, "SELECT * FROM `categories` ");
 
             <div class="hero__slide-thumb-text-holder">
               <div class="container">
-                <a href="categories.html" class="entry__meta-category entry__meta-category--label">Devnano</a>
+                <a href="categories.html" class="entry__meta-category entry__meta-category--label">MyPress</a>
                 <h2 class="entry__title entry__title--white"
                   style="font-size: 36px; margin-top: 10px; max-width: 700px;">
                   <a>Uncovering and explaining how our digital world is changing — and changing us.</a>
@@ -328,7 +327,7 @@ $categorie = mysqli_query($db, "SELECT * FROM `categories` ");
 
            <!-- Widget socials -->
            <div class="widget widget-socials">
-            <h4 class="widget-title">Keep up with Devnano</h4>
+            <h4 class="widget-title">Keep up with MyPress</h4>
             <ul class="socials">
               <?php
                    
@@ -380,7 +379,7 @@ $categorie = mysqli_query($db, "SELECT * FROM `categories` ");
 
           <!-- Widget Newsletter -->
           <!-- <div class="widget widget_mc4wp_form_widget">
-            <h4 class="widget-title">Subscribe for Devnano news and receive daily updates</h4>
+            <h4 class="widget-title">Subscribe for MyPress news and receive daily updates</h4>
             <form id="mc4wp-form-1" class="mc4wp-form" method="post">
               <div class="mc4wp-form-fields">
                 <p>
@@ -463,7 +462,7 @@ $categorie = mysqli_query($db, "SELECT * FROM `categories` ");
           <span class="copyright">
             &copy; <script>
               document.querySelector(".copyright").innerHTML += new Date().getFullYear();
-            </script> Devnano | Made by <a href="https://deothemes.com">Naoual</a>
+            </script> MyPress 
           </span>
         </div>
       </div> <!-- end bottom footer -->

@@ -27,7 +27,7 @@ $c = $c->getAll();
                                 <img src="assets/images/logo-sm-dark.png" alt="" height="22">
                             </span>
                             <span class="logo-lg">
-                                <img src="assets/images/logo-dark.png" alt="" height="24">
+                                <img src="assets/images/logo-dark.png" alt="" height="44">
                             </span>
                         </a>
 
@@ -103,7 +103,7 @@ $c = $c->getAll();
 
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
-                            <a class="dropdown-item text-primary" href="#"><i
+                            <a class="dropdown-item text-primary" href="../logout.php"><i
                                     class="mdi mdi-power font-size-16 align-middle me-2 text-primary"></i>
                                 <span>Logout</span></a>
                         </div>
@@ -136,7 +136,7 @@ $c = $c->getAll();
                                 <div class="page-title">
                                     <h4 class="mb-0 font-size-18">Utilisateurs</h4>
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Devnano</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">MyPress</a></li>
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">Utilisateurs</a></li>
                                         <li class="breadcrumb-item active">Liste des Utilisateurs</li>
                                     </ol>
@@ -260,9 +260,7 @@ $c = $c->getAll();
                 <div class="col-sm-12 text-center">
                     <script>
                         document.write(new Date().getFullYear())
-                    </script> © Devnano <span class="d-none d-sm-inline-block"><i class="mdi mdi-heart text-danger"></i>
-                        by
-                        Naoual.</span>
+                    </script> © MyPress <span class="d-none d-sm-inline-block">
                 </div>
 
             </div>

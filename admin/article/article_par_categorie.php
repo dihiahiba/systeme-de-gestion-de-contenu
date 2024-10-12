@@ -149,7 +149,7 @@ $categorie = mysqli_query($db, "SELECT * FROM `categories` ");
 
                     <!-- Logo -->
                     <a href="index.html" class="logo">
-                        <img class="logo__img" src="img/logo_dev.png" style="height:20px; " alt="logo">
+                        <img class="logo__img" src="img/logo_dev.png" style="height:40px; " alt="logo">
                     </a>
 
                     <!-- Nav-wrap -->
@@ -442,7 +442,7 @@ $categorie = mysqli_query($db, "SELECT * FROM `categories` ");
                     <span class="copyright">
                         &copy; <script>
                             document.querySelector(".copyright").innerHTML += new Date().getFullYear();
-                        </script> Devnano | Made by <a href="https://deothemes.com">Naoual</a>
+                        </script> MyPress
                     </span>
                 </div>
             </div> <!-- end bottom footer -->
